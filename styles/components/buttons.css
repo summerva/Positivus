@@ -1,0 +1,41 @@
+.button {
+    border: var(--border);
+    border-radius: var(--border-radius-button);
+    padding: 20px 35px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: var(--transition-duration);
+    transform: scale(1);
+}
+
+.button_theme-white{
+    background-color: var(--color-white); 
+}
+.button_theme-black{
+    background-color: var(--color-dark); 
+    color: white;
+}
+
+.button_theme-green{
+    background-color: var(--color-green);
+    color: var(--color-white);
+}
+
+.button:hover {
+    transform: scale(1.05); /* Увеличение на 5% */
+}
+
+.button:active {
+    transform: scale(0.98); /* Легкое сжатие при клике */
+}
+
+.arrow {
+    display: flex;
+    align-items: center; /* Выравнивание по вертикали */
+    gap: 10px; /* Расстояние между svg и текстом */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
