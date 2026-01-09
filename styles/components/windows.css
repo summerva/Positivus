@@ -47,7 +47,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     border-radius: var(--border-radius);
-    margin-top: 80px;
+    margin-top: var(--margin-top);
     color: white;
 }
 
@@ -55,7 +55,7 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
-    margin-top: 80px;
+    margin-top: var(--margin-top);
 }
 
 .working-item{
@@ -66,4 +66,40 @@
     box-shadow: var(--box-shadow);
     background-color: var(--color-gray);
     width: 100%;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: var(--margin-top);
+    gap: 40px;
+}
+
+.team-card {
+    border: var(--border);
+    border-radius: var(--border-radius);
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    padding: 60px 35px;
+}
+
+.team-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+}
+
+.testimonials{
+    display: flex;
+    justify-content: center;
+    background: var(--color-dark);
+    border-radius: var(--border-radius-button);
+    color: var(--color-white);
+    margin-top: var(--margin-top);
+}
+
+.testimonials-card{
+    padding: 80px 10px;
+    width: 50%;
 }

@@ -7,7 +7,7 @@
 .services-text{
     display: flex;
     gap: 40px;
-    margin-bottom: 80px;
+    margin-bottom: var(--margin-top);
     align-items: center;
 }
 
@@ -56,14 +56,16 @@
     margin-bottom: -15px;
 }
 
-.studies-text{
+
+
+.span-item{
     display: flex;
     gap: 40px;
     margin-top: 150px;
     align-items: center;
 }
 
-.studies-text span {
+.span-item span {
     background-color: var(--color-green);
     padding-inline: 7px;
     border-radius: var(--border-radius-button);
@@ -106,4 +108,88 @@
 .working-title{
     font-size: 30px;
     font-weight: 400;
+}
+
+
+
+.team-image-wrapper {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.team-info{
+    margin-top: auto;
+}
+
+.team-name {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.team-position {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.team-social {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-dark);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.team-social img {
+    width: 17px;
+    height: 17px;
+}
+
+.team-divider {
+    margin: 25px 0;
+    border: 1;
+    border-top: 1px solid var(--color-dark);
+}
+
+.team-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-dark);
+}
+
+.team-button {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.team-button button {
+    padding-inline: 70px;
+}
+
+
+
+.testimonials-message {
+    border: 1px solid var(--color-green);
+    border-radius: var(--border-radius);
+    padding: 50px;
+}
+
+.testimonials-info{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.testimonials-info span{
+    color: var(--color-green);
+    font-weight: 500;
 }
