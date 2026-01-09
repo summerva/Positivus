@@ -1,0 +1,109 @@
+.service {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-text{
+    display: flex;
+    gap: 40px;
+    margin-bottom: 80px;
+    align-items: center;
+}
+
+.services-text span {
+    background-color: var(--color-green);
+    padding-inline: 7px;
+    border-radius: var(--border-radius-button);
+    font-size: 40px;
+    font-weight: 500;
+}
+
+
+.service_input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    width: 45%;
+}
+
+.service_input-button{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+
+.cta-block{
+    display: flex;
+    margin-top: 120px;
+    border-radius: var(--border-radius);
+    gap: 180px;
+    background: var(--color-gray);
+    overflow: visible;
+}
+
+.cta-inner{
+    padding: 60px;
+}
+
+.cta-inner h3{
+    font-size: 30px;
+}
+
+.cta-block img{
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
+
+.studies-text{
+    display: flex;
+    gap: 40px;
+    margin-top: 150px;
+    align-items: center;
+}
+
+.studies-text span {
+    background-color: var(--color-green);
+    padding-inline: 7px;
+    border-radius: var(--border-radius-button);
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.studies-inner{
+    display: flex;
+    align-items: center;
+}
+
+.studies-block{
+    padding: 60px 70px;
+}
+
+.studies-inner button{
+    color: var(--color-green);
+}
+
+.working-header{
+    display: flex;
+    padding: 30px 40px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.working-info{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.working-number{
+    font-weight: 500;
+    font-size: 60px;
+}
+
+.working-title{
+    font-size: 30px;
+    font-weight: 400;
+}

@@ -39,3 +39,38 @@
     border: none;
     cursor: pointer;
 }
+
+.arrow:hover {
+    transform: scale(1.05); /* Увеличение на 5% */
+}
+
+.arrow:active {
+    transform: scale(0.98); /* Легкое сжатие при клике */
+}
+
+
+.working-toggle{
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--border);
+    background-color: var(--color-gray);
+    border-radius: 50%;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: var(--transition-duration);
+    transform: scale(1);
+    font-size: 48px;
+    font-weight: 500;
+    flex-shrink: 0;
+}
+
+.working-toggle:hover {
+    transform: scale(1.05); /* Увеличение на 5% */
+}
+
+.working-toggle:active {
+    transform: scale(0.98); /* Легкое сжатие при клике */
+}
