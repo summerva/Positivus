@@ -20,7 +20,7 @@
 
 .button_theme-green{
     background-color: var(--color-green);
-    color: var(--color-white);
+    color: var(--color-dark);
 }
 
 .button:hover {

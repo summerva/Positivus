@@ -193,3 +193,91 @@
     color: var(--color-green);
     font-weight: 500;
 }
+
+.contact-radio{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.radio-option input[type="radio"] {
+    display: none;
+}
+
+.radio-custom {
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--color-dark);
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+    background-color: var(--color-white);
+    transition: background-color 0.3s ease; 
+}
+
+.radio-option input[type="radio"]:checked + .radio-custom {
+    background-color: var(--color-white);
+}
+
+.radio-option input[type="radio"]:checked + .radio-custom::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background-color: var(--color-green);
+    border-radius: 50%;
+    animation: scaleIn 0.3s ease;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: translate(-50%, -50%) scale(0);
+    }
+    to {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.form-group{
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block; 
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 18px 30px;
+    border: 1px solid var(--color-dark);
+    border-radius: var(--border-radius-button);
+    font-size: 16px;
+    resize: none; 
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-green);
+    box-shadow: 0 0 0 3px rgba(185, 255, 0, 0.2);
+}
+
+.contact-inner button{
+    width: 100%;
+}
