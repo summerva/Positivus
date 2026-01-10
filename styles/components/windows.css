@@ -92,18 +92,15 @@
     position: relative;
 }
 
-.testimonials{
-    display: flex;
-    justify-content: center;
+.testimonials {
     background: var(--color-dark);
     border-radius: var(--border-radius-button);
-    color: var(--color-white);
     margin-top: var(--margin-top);
+    padding: 80px 100px;
 }
 
-.testimonials-card{
-    padding: 80px 10px;
-    width: 50%;
+.testimonials-wrapper {
+    max-width: 100%;
 }
 
 .contact{

@@ -1,7 +1,8 @@
 import { initAccordion } from './accordion.js';
+import { initTestimonialsSlider } from './slider.js';
 
-// Запускаем после загрузки DOM
 document.addEventListener('DOMContentLoaded', () => {
     initAccordion();
-    initSlider();
+    initTestimonialsSlider();
 });
+
