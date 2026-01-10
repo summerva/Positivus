@@ -45,15 +45,37 @@
     max-width: 45%;
 }
 
+.carousel-wrapper {
+    overflow: hidden;
+    margin-top: 70px;
+    width: 100%;
+}
+
 .header_carousel {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 70px;
     gap: 95px;
+    animation: scroll 20s linear infinite;
+    width: max-content;
 }
 
 .header_carousel img {
     filter: grayscale(100%) brightness(0);
-    opacity: 0.9; 
+    opacity: 0.9;
+    flex-shrink: 0;
 }
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Сдвигаем на половину (6 логотипов) */
+    }
+}
+
+/* Пауза при наведении (опционально) */
+.header_carousel:hover {
+    animation-play-state: paused;
+}
+
